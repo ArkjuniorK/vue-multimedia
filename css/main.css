@@ -1,0 +1,781 @@
+@font-face {
+    font-family: quicksand;
+    src: url(../font-face/Quicksand-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: raleway-bold;
+    src: url(../font-face/Raleway-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: raleway-black;
+    src: url(../font-face/Raleway-Black.ttf) format("truetype");
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../font-face/Montserrat-Black.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: lithos-pro;
+    src: url(../font-face/LithosPro-Black.otf) format("opentype");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: raleway-medium;
+    src: url(../font-face/Raleway-Medium.ttf) format("truetype");
+}
+
+.quicksand {
+    font-family: quicksand;
+}
+.raleway-bold {
+    font-family: raleway-bold;
+}
+.raleway-medium {
+    font-family: raleway-medium;
+}
+.raleway-black {
+    font-family: raleway-black;
+}
+.white {
+    color: #fff;
+}
+/* 
+<-----
+
+:::BAGIAN KHUSUS NAVBAR::::
+::BAGIAN AWAL NAVBAR:::
+
+------>
+*/
+
+ul.nav {
+    /* untuk membuat isi nav menjadi
+    sejajar secara vertical
+    */
+    align-items: center !important;
+}
+/* bagian logo */
+#logo-item{
+    font-family: lithos-pro;
+    color: #fff;
+    margin: 0 !important;
+}
+.nav-link {
+    padding: 0 !important;
+    color: #fff;
+}
+
+/* bagian dropdown */
+.dd-parent {
+    padding-right: 0 !important;
+    font-family: raleway-medium;
+}
+.nav-link-dropdown {
+    display: inline-flex;
+}
+.dropdown-right {
+    font-size: 1.3rem;
+    color: #fff;
+}
+.router-link-exact-active{
+    color: #fff;
+    font-family: raleway-bold;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #C0BEFF;
+}
+.nav-link-custom:hover,
+.nav-link-custom:focus {
+    color: #C0BEFF  ;
+    text-decoration: none;
+}
+.dropdown-menu {
+    background-color: none !important;
+    padding: .8rem 0 !important;
+    border: none !important;
+}
+.dropdown-item {
+    color: #8581FF !important;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #DEDEDE !important;
+}
+.link-active {
+    font-family: raleway-bold;
+    color: #FFA851 !important;
+}
+/* bagian untuk btn-menu */
+.btn-transparent {
+    border: none;
+    background: none;
+}
+
+/* bagian untuk navbar tablet dan phone */
+.navigation-active-screen {
+    transform: translateX(0%);
+    transition: ease-in-out 0.5s;
+}
+.navigation-deactivate-screen {
+    transform: translateX(100%);
+    transition: ease-in-out 0.5s;
+    /* animation-direction: ; */
+}
+.navigation-tb-mb {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgb(133,129,255);
+    background: linear-gradient(156deg, rgba(133,129,255,1) 0%, rgba(20,84,210,1) 100%); 
+}
+.navbar-menu-active {
+    position: relative;
+}
+.link-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100vh - 20vh);
+    overflow-y: auto;
+}
+.link-section-child {
+    display: flex;
+    flex-direction: column;
+    font-family: raleway-bold;
+}
+h2.link-item-single {
+    margin-bottom: 10px !important;
+}
+h2.link-item-single a {
+    color: #fff !important;
+}
+h3.social-title {
+    font-family: montserrat;
+    color: #fff;
+}
+.social-icon-item i.flaticon::before {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 30pt;
+}
+
+/* toggle class */
+.nav-link-dropdown-hide {
+    display: none;
+}
+.ham-menu-hide {
+    display: none;
+}
+.ham-menu-active {
+    display: contents;
+}
+.white {
+    fill: #fff;
+    stroke: none;
+}
+
+
+/* 
+<-----
+
+::BAGIAN FRONT PAGE::
+::KHUSUS BAGIAN FRONT PAGE::
+
+------>
+
+*/
+
+
+/* 
+dengan absolute position
+background mejadi lebih mudah diatur 
+*/
+.img-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+/* bagian upper-section-child */
+.upper-section-child{
+    height: 800px !important;
+    margin: 0 !important;
+}
+/* bagian section-right */
+.section-right{
+    padding: 0 !important;
+}
+/* bagian header-hero */
+h1.heading-hero {
+    font-family: montserrat !important;
+    font-size: 3.3rem;
+    color: white;
+}
+h3.detail-text{
+    font-family: quicksand;
+    color: white;
+}
+.button-section{
+    margin-top: 8rem;
+}
+.btn-learn{
+    padding: 10px 30px !important;
+    background-color: white !important;
+    border: none !important;
+    color: #8581FF !important;
+    font-family: quicksand !important;
+}
+.btn-learn:hover,
+.btn-learn:focus {
+    background-color: #FFA851 !important;
+    color: #fff !important;
+    transition: ease-in-out 0.2s;
+}
+
+/* bagian model-image */
+.section-left {
+    position: relative;
+}
+.model-image {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* bagian title universal */
+h1.title-section {
+    font-family: raleway-black;
+    font-size: 4rem;
+    color: #8581FF;
+}
+#line-separator {
+    display: block;
+    border: none;
+    height: 10px;
+    width: 60px;
+    border-top: 10px solid #FFA851;
+    margin-bottom: 15px;
+}
+.desc-subtitle {
+    font-family: quicksand;
+    color: #8581FF;
+}
+/* bagian about-us-section */
+/* bagian card */
+.column-style {
+    padding: 0 10px !important;
+}
+.linear-back {
+    border: none !important;
+    border-radius: 10px !important;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+    width: 95%;
+    transition: ease-in-out 0.3s;
+    background: rgb(133,129,255);
+    background: linear-gradient(156deg, rgba(133,129,255,1) 0%, rgba(20,84,210,1) 100%); 
+}
+.linear-back:hover,
+.linear-back:focus {
+    transition: ease-in-out 0.3s;
+    transform: translateY(-10px);
+    background: rgb(255,196,129);
+    background: linear-gradient(156deg, rgba(255,196,129,1) 16%, rgba(20,158,210,1) 100%); 
+}
+/* buat object menjadi di tengah */
+.card-body {
+    margin: auto;
+    position: absolute;
+}
+.link-about-us:hover,
+.link-about-us:focus {
+    text-decoration: none !important;
+    color: #DEDEDE !important;
+}
+h2.card-link {
+    font-family: raleway-bold;
+    color: #fff;
+}
+
+/* bagian untuk berita dan blog */
+.news-desc {
+    width: 50%;
+}
+.blog-example {
+    width: 40%;
+}
+/* bagian card-img */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+}
+.card-container .card:first-child{
+    grid-row-start: 3;
+    grid-row-end: 1;
+}
+.child {
+    background-color: #C0BEFF;
+    border: none !important;
+    position: relative;
+    height: 100%;
+    border-radius: 10px !important;
+}
+.img-thumb-section {
+    height: 100%;
+    width: 100%;
+}
+.img-thumb {
+    object-fit: cover;
+    height: 100% !important;
+    border: none;
+}
+.overlay-effect {
+    background-color: #43A6C2;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.head-context-section {
+    bottom: 0px;
+}
+h2.news-head-title {
+    font-family: raleway-black;
+    color: #fff;
+    width: 80%;
+}
+.news-context p {
+    color: #fff;
+    font-family: quicksand;
+    width: 90%;
+}
+.btn-news {
+    color: #fff;
+    font-family: raleway-medium;
+}
+.btn-news:hover,
+.btn-news:focus {
+    color: #DEDEDE;
+    text-decoration: none !important;
+    transition: ease-in-out 0.2s
+}
+
+
+/* bagian unutk profil, kurikulum dan fasilitas */
+/* custom-class */
+
+.full-width {
+    width: auto;
+}
+.main-width {
+    width: 100%;
+}
+.mt-vh {
+    margin-top: 15vh;
+}
+.title-section-two {
+    font-size: 3rem;
+    color: #8581FF;
+}
+.desc-subtitle-two {
+    color: #8581FF;
+}
+/* BAGIAN PROFIL, KURIKULUM DAN FASILITAS */
+/* BAGIAN PROFIL */
+
+.title-icon {
+    color: #fff; 
+}
+.desc-section-title,
+.desc-section-desc {
+    color: #8581FF
+}
+ .profile-section-child.row {
+    flex-direction: column;
+}
+
+h1.title-section-scoped,
+.desc-subtitle-scoped {
+    color: #8581FF !important;
+}
+.desc-subtitle-scoped {
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .profile-section-child.row {
+        flex-direction: row;
+    }
+    
+    h5.desc-section-title {
+        font-size: 30pt;
+    }
+    .desc-section-desc {
+        font-size: 15pt;
+    }
+    .desc-section-title,
+    .desc-section-desc {
+        color: #fff;
+    }
+    h1.title-section-scoped,
+    .desc-subtitle-scoped {
+        color: #fff !important;
+    }
+    .icon-section svg {
+        width: 150px;
+        height: 150px;
+    }
+    .title-icon {
+        font-size: 30pt;
+    }
+    
+}
+@media only screen and (min-width: 700px) {
+    .profile-section-child.row {
+        flex-direction: row;
+    }
+    .desc-section-title,
+    .desc-section-desc {
+        color: #fff;
+    }
+    .about-us-card-section {
+        background: #fff;
+    }
+    .title-section-scoped {
+        font-size: 4rem;
+    }
+    
+}
+
+
+/* bagian umtu single page */
+/* custom class */
+
+.purple-color {
+    width: 100%;
+    background: rgb(138,122,255);
+    background: linear-gradient(90deg, rgba(138,122,255,1) 0%, rgba(255,166,126,1) 100%); 
+}
+#img-hero {
+    width: 100%;
+}
+.core-section h2,
+.core-section h1,
+.core-section h3 {
+    font-family: raleway-bold;
+    font-size: 15pt;
+}
+.core-section p {
+    font-family: quicksand;
+}
+.core-section img {
+    width: 100%;
+}
+.category-section-child.row {
+    margin: 0 !important;
+}
+.cats {
+    font-family: quicksand;
+    background-color: #8581FF;
+    color: #fff;
+    padding: 10px;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+.cats.col {
+    flex-grow: 0;
+}
+span.line-separator {
+    border-bottom: 2px;
+    height: 2px;
+    display: block;
+    background-color: #C0BEFF;
+}
+.post-controller {
+    display: flex;
+}
+a.btn-control {
+    font-family: quicksand;
+    color: #8581FF;
+}
+
+@media only screen and (min-width: 600px) {
+    .title-date-section h4 {
+        font-size: 30pt;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .title-date-section h4 {
+        font-size: 40pt;
+        width: 80%;
+    }
+    .title-date-section small {
+        font-size: 15pt;
+    }
+    .core-section h2,
+    .core-section h1,
+    .core-section h3 {
+        font-family: raleway-bold;
+        font-size: 25pt;
+    }
+    .core-section p {
+        font-family: quicksand;
+        font-size: 15pt;
+    }
+}
+
+/* 
+<------ MEDIA QUERY ------>
+<------ BAGIAN NAVBAR ------>
+<------ BAGIAN FOOTER-NAVIGATION ------>
+<------ KHUSUS BAGIAN FRONT PAGE ------>
+*/
+
+@media only screen and (min-width:1600px){
+    .custom-container{
+        margin: 0 325px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .custom-container {
+        margin: 0 90px;
+    }
+    .about-us-section {
+        width: 100%;
+    }
+    .about-us-section-child .ml-auto {
+        margin-left: 0 !important
+    }
+    .about-us-section-child .mr-auto {
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .card-container .card .head-context-section .news-context{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-container .card .head-context-section .news-context{
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .upper-section-child {
+        flex-direction: row !important;
+        height: 100% !important;
+    }
+    .text-header,
+    .button-section {
+        text-align: center;
+    }
+    .section-left {
+        width: 100%;
+        display: none;
+    }
+    .about-us-section-child{
+        text-align: center;
+    }
+    .about-us-text #line-separator {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .about-us-text .about-us-desc {
+        margin-bottom: 20px;
+    }
+    .about-us-card.row {
+        flex-direction: row !important;
+    }
+    .column-style {
+        width: 300px !important;
+        height: 300px;
+        text-align: -moz-center;
+    }
+    .card-container .card .head-context-section .news-context{
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width:320px) {
+    .custom-container {
+        margin: 0 30px
+    }
+    h1#logo-item {
+        font-size: 20pt !important;
+    }
+    .section-right {
+        margin: auto;
+    }
+    h1.heading-hero {
+        font-size: 20pt;
+    }
+    h3.detail-text {
+        font-size: 15pt;
+    }
+    .button-section {
+        margin-top: 2rem;
+    }
+    .button-section a {
+        font-size: 10pt;
+        padding: 10px 30px !important;
+    }
+    h1.title-section {
+        font-size: 25pt;
+    }
+    h1.about-us-title {
+        color: #fff !important;   
+    }
+    h1.about-us-title br{
+        display: none;
+    }
+    h5.desc-subtitle {
+        font-size: 12pt;
+    }
+    h5.about-us-desc {
+        color: #fff;
+    }
+    .about-us-card.row {
+        display: contents;
+    }
+    .column-style {
+        width: 100% !important;
+        margin-bottom: 20px;
+        height: 200px;
+        /* flex-basis: 0 !important; */
+    }
+    .img-svg img {
+        width: 70%;
+    }
+    h2.card-link {
+        font-size: 15pt;
+    }
+    .news-desc {
+        width: 100%;
+    }
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        height: 600px;
+    }
+    .card-container
+    .card:first-child {
+        grid-row-start: 1;
+    }
+    .child {
+        border-radius: 5px !important;
+    }
+    h2.news-head-title {
+        font-size: 15pt;
+        width: 100%;
+    }
+    .news-context p {
+        width: 100%;
+        font-size: 10pt;
+        display: none;
+    }
+    .head-context-section a {
+        font-size: 12pt;
+    }
+
+    /* bagian navbar-secren */
+    .links-item-section h2 {
+        font-size: 20pt;
+        margin-bottom: 5px !important;
+    }
+    .links-item-section.ml-5{
+        margin: 0 !important;
+    }
+    .link-item-social.ml-5 {
+        margin: 0 !important;
+    }
+    h3.social-title {
+        font-size: 20pt;
+    }
+    .social-icon-item i.flaticon::before {
+        color: #fff;
+        margin-right: 10px;
+        font-size: 20pt;
+    }
+    .link-section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: calc(100vh);
+        overflow-y: auto;
+        padding-bottom: 7rem;
+    }
+}
+
+
+/* 
+<----------
+
+:::FOOTER SECTION:::
+:::BAGIAN INI KHUSUS FOOTER:::
+
+------------>
+*/
+
+.footer-section-child {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    color: #fff;
+    background: rgb(113,109,255);
+    background: linear-gradient(165deg, rgba(113,109,255,1) 0%, rgba(152,149,255,1) 100%); 
+}
+.prodi {
+    font-family: raleway-medium;
+}
+.head-title {
+    font-family: raleway-black;
+}
+.item-links,
+.address-item {
+    font-family: raleway-medium;
+    color: #fff;
+}
+.flaticon:hover,
+.flaticon:focus {
+    color: #C0BEFF;
+}
+.item-links:hover,
+.item-links:focus {
+    text-decoration: none !important;
+    color: #C0BEFF;
+}
+
+/* untuk screen 600px */
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    .footer-section-child {
+        border-radius: 5px;
+    }
+    .navigation-links-child.row {
+        flex-direction: column;
+    }
+    h2.head-title {
+        font-size: 15pt;
+    }
+    h5.prodi {
+        font-size: 12pt;
+    }
+    .footer-item {
+        margin-bottom: 20px;
+    }
+    .link-navigate-item a h4,
+    h4.address-item {
+        font-size: 12pt;
+    }
+}

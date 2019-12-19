@@ -59,7 +59,11 @@ ul.nav {
 }
 /* bagian logo */
 #logo-item{
+<<<<<<< HEAD
     font-family: raleway-bold;
+=======
+    font-family: lithos-pro;
+>>>>>>> 3b39ecc9405fd4db963a0f587c07cbcd29c3e0a9
     color: #fff;
     margin: 0 !important;
 }

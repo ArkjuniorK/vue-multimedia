@@ -4,10 +4,16 @@
     <div class="navbar-parent">
         <div class="navbar-top py-5 custom-container">
             <b-nav>
+<<<<<<< HEAD
                 <div class="logo-section" style="display:flex">
                     <img src="http://localhost/wordpress/wp-content/themes/multimedia/images/logo.png" style="width:40px;height:40px;" class="mr-2">
                     <b-nav-item to="/" class="home-logo-item">
                         <h2 id="logo-item">Multimedia</h2>
+=======
+                <div class="logo-section">   
+                    <b-nav-item to="/" class="home-logo-item">
+                        <h1 id="logo-item">MM</h1>
+>>>>>>> 3b39ecc9405fd4db963a0f587c07cbcd29c3e0a9
                     </b-nav-item>
                 </div>
                 <div class="dd-parent ml-auto"> 

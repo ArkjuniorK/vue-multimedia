@@ -1,13 +1,7 @@
+.vscode
+css
 font-face
 images
-<<<<<<< HEAD
 gulpfile.js
 package.json
 style.css
-css
-.vscode
-=======
-package.json
-gulpfile.js
-style.css
->>>>>>> 3b39ecc9405fd4db963a0f587c07cbcd29c3e0a9

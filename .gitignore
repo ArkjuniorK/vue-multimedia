@@ -3,3 +3,5 @@ images
 css
 .vscode
 gulpfile.js
+package.json
+style.css
